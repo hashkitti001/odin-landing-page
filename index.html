@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo"><h2 id="logo-text">Header Logo</h2></div>
+        <div id="links">
+            <h2 class="nav-link">header link one</h2>
+            <h2 class="nav-link">header link two</h2>
+            <h2 class="nav-link">header link three</h2>
+        </div>
+    </div>
+    <section id="jumbotron">
+        <div id="text-section">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title/ It is a smaller font and the color is lower contrast.</p>
+            <button id="blue-btn">Sign Up</button>
+        </div>
+        <div id="canvas">
+            <p class="c-texts">This is a placeholder for an image</p>
+        </div>
+    </section>
+    <section id="infosec">
+        <h2>Some random information</h2>
+        <div id="container">
+            <div class="emptybox"></div>
+            <p class="c-text">this is some subtext under an illustration or image</p>
+        
+            <div class="emptybox">  </div>
+                <p class="c-text"> this is some subtext under an illustration or image</p>
+          
+            <div class="emptybox">  </div>
+                <p class="c-text">this is some subtext under an illustration or image</p>
+           
+            <div class="emptybox">  </div>
+                <p class="c-text">this is some subtext under an illustration or image</p>
+           
+        </div>
+    </section>
+    <section id="quotes">
+        <blockquote>This is an inspiring quote, or a testimonial from a customer.Maybe it's just filling space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</blockquote>
+         <p class="quoter">-Thor, God of Thunder</p>
+    </section>
+    <section id="card-sec">
+     <div id="card">
+        <div class="card-text">
+        <h3>Call to action! It's time!</h2>
+        <p>Sign up for our product by clicking that button over there.</p>
+        </div>
+        <button class="s-up">Sign Up</button>
+    </div>
+    </section>
+<footer>
+    <p></p>
+</footer>
+    <style>
+        *{
+            font-family: Roboto;
+        }
+        #logo{
+            padding:0 30% 0 5%;
+            font-weight: bolder;
+            
+        }
+
+        #navbar, #jumbotron{
+            background-color: #1F2937;
+            display: flex;
+            color:white;
+        }
+       
+        #links{
+            display:flex;
+            justify-content:end;  
+            gap:24px;
+            color:grey;
+        }
+        h1{
+            font-size:48px;
+            font-weight: bolder;
+            color:#F9FAF8;
+        }
+        #jumbotron {
+            display:flex;
+            flex-direction: row;
+        }
+        #text-section{
+            width:50%;
+            padding:5%;
+        }
+        #canvas{
+            background-color:grey;
+            width:50%;
+            height:350px;
+           margin:0 50px 10px 20px;
+           text-align: center;
+           justify-content: space-between;
+        }
+        .c-texts{
+            padding:140px;
+        }
+        #blue-btn{
+            background-color:#3882F6;
+            color:white;
+            width:120px;
+            height:40px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            font-size:20px;
+        }
+        #container{
+            width:100%;
+            display:flex; 
+           
+        }
+        h2{
+            text-align: center;
+        }
+        .emptybox{
+            flex-direction: column;
+            border:4px solid #3882F6;
+            width:120px;
+            height:120px;
+            border-radius: 30px;
+        }
+        .c-text{
+            justify-self: flex-end;
+            
+           
+        }
+        #quotes{
+            padding: 30px;
+            background-color:#E5E7EB ;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: lighter;
+            color:#1F2937;
+            flex-direction: column;
+        }
+        .quoter{
+            text-align: end;
+            font-size: 20px;
+            font-weight: bold;
+            text-align:end;  
+        }
+        #card-text{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+           
+            
+        }
+        #card-sec{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #card{
+            margin:30px;
+            background-color: #3882F6;
+            width:100%;
+            color:#F9FAF8;
+        }
+    </style>
+</body>
+</html>
