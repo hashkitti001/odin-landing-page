@@ -31,18 +31,22 @@
     <section id="infosec">
         <h2>Some random information</h2>
         <div id="container">
+        <div class="box">
             <div class="emptybox"></div>
             <p class="c-text">this is some subtext under an illustration or image</p>
-        
+        </div>
+        <div class="box">
             <div class="emptybox">  </div>
                 <p class="c-text"> this is some subtext under an illustration or image</p>
-          
+          </div>
+          <div class="box">
             <div class="emptybox">  </div>
                 <p class="c-text">this is some subtext under an illustration or image</p>
-           
+           </div>
+           <div class="box">
             <div class="emptybox">  </div>
                 <p class="c-text">this is some subtext under an illustration or image</p>
-           
+           </div>
         </div>
     </section>
     <section id="quotes">
@@ -59,7 +63,7 @@
     </div>
     </section>
 <footer>
-    <p></p>
+    <p>Copyright © The Odin Project 2021</p>
 </footer>
     <style>
         *{
@@ -92,6 +96,9 @@
             display:flex;
             flex-direction: row;
         }
+        .c-texts{
+            margin:140px;
+        }
         #text-section{
             width:50%;
             padding:5%;
@@ -104,9 +111,7 @@
            text-align: center;
            justify-content: space-between;
         }
-        .c-texts{
-            padding:140px;
-        }
+       
         #blue-btn{
             background-color:#3882F6;
             color:white;
@@ -120,6 +125,7 @@
         #container{
             width:100%;
             display:flex; 
+            flex-direction: row;
            
         }
         h2{
@@ -132,11 +138,7 @@
             height:120px;
             border-radius: 30px;
         }
-        .c-text{
-            justify-self: flex-end;
-            
-           
-        }
+       
         #quotes{
             padding: 30px;
             background-color:#E5E7EB ;
@@ -152,23 +154,39 @@
             font-weight: bold;
             text-align:end;  
         }
-        #card-text{
-            display: flex;
-            flex-direction: column;
-            margin-left: 10px;
-           
-            
-        }
-        #card-sec{
-            display: flex;
-            flex-direction: column;
-            
-        }
+    
+        
         #card{
-            margin:30px;
+            margin:30px 0px 30px 120px;
             background-color: #3882F6;
-            width:100%;
+            width:75%;
             color:#F9FAF8;
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+        }
+       .card-text{
+        margin-left: 100px;
+       }
+       
+      
+        .s-up{
+            width:100px;
+            height:40px;
+            background-color:#3882F6;
+            border:2px solid #F9FAF8;
+            border-radius: 10px;
+            color:#F9FAF8;
+            margin-left: 250px;
+            margin-top:25px;
+           
+        }
+        footer{
+            background-color: #1F2937;
+            text-align: center;
+            color:#F9FAF8;
+            height:80px;
+            padding-top:30px;
         }
     </style>
 </body>
